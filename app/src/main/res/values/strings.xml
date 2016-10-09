@@ -1,10 +1,16 @@
 <resources>
     <string name="app_name">EnglishFrame</string>
-    <string name="pageone">页面一</string>
+    <string name="pageone">扫一扫</string>
     <string name="pagetwo">页面二</string>
     <string name="pagethree">页面三</string>
     <string name="pageseting">设置</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_orcidentify">ORCIdentifyActivity</string>
+
+    <string name="orcidenty">识别文字</string>
+    <string name="unsupportflash">此设备不支持闪光灯</string>
+    <string name="unsupport_auto_focus">此设备不支持自动对焦</string>
+    <string name="toast_autofocus_failure">自动对焦失败</string>
 </resources>

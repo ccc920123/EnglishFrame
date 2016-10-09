@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+    <SurfaceView
+        android:id="@+id/surfaceview_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_camera_back"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/camera_back" />
+
+    <CheckBox
+        android:id="@+id/iv_camera_flash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:checked="false"
+        android:button="@null"
+        android:background="@drawable/flash_selector"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bg_template_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/imbtn_takepic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style1"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_scaner_line"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/scanline"
+        android:visibility="invisible"/>  -->
+
+</RelativeLayout>

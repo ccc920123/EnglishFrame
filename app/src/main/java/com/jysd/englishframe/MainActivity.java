@@ -1,10 +1,9 @@
 package com.jysd.englishframe;
 
 import android.content.Intent;
-import android.graphics.Color;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
@@ -63,8 +62,8 @@ public class MainActivity extends BaseActivity {
                 .withHasStableIds(true)
                 .withAccountHeader(headerResult) //set the AccountHeader we created earlier for the header /GoogleMaterial.Icon.gmd_videocam/FontAwesome.Icon.faw_picture_o/GoogleMaterial.Icon.gmd_text_format
                 .addDrawerItems(
-                        new PrimaryDrawerItem().withName(R.string.pageone).withIcon(R.mipmap.ic_launcher).withIdentifier(1).withSelectable(true),
-                        new PrimaryDrawerItem().withName(R.string.pagetwo).withIcon(R.mipmap.ic_launcher).withIdentifier(2).withSelectable(true),
+                        new PrimaryDrawerItem().withName(R.string.pagetwo).withIcon(R.mipmap.ic_launcher).withIdentifier(1).withSelectable(true),
+                        new PrimaryDrawerItem().withName(R.string.pageone).withIcon(R.mipmap.ic_launcher).withIdentifier(2).withSelectable(true),
                         new PrimaryDrawerItem().withName(R.string.pagethree).withIcon(R.mipmap.ic_launcher).withIdentifier(3).withSelectable(true),
                         new PrimaryDrawerItem().withName(R.string.pageseting).withIcon(R.mipmap.ic_launcher).withIdentifier(5).withSelectable(false)
 
@@ -86,13 +85,13 @@ public class MainActivity extends BaseActivity {
                                 dId = 1;
                                 mTabLayout.removeAllTabs();
                                 mViewPager.removeAllViews();
-                                setupViewPager();
-                                //               intent = new Intent(MainActivity.this, TopicActivity.class);
+                                setupActivityViewPager();
                             } else if (drawerItem.getIdentifier() == 2 && dId != 2) {
                                 dId = 2;
                                 mTabLayout.removeAllTabs();
                                 mViewPager.removeAllViews();
-                                setupViewPager();
+                                intent = new Intent(MainActivity.this, ORCIdentifyActivity.class);
+                                finish();
                             } else if (drawerItem.getIdentifier() == 3 && dId != 3) {
                                 dId = 3;
                                 mTabLayout.removeAllTabs();
